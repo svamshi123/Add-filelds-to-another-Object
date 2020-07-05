@@ -1,0 +1,104 @@
+<template>
+    
+</template>
+<!-- <template>
+   
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="standard:timesheet" alternative-text="Event" size="small"></lightning-icon>
+            &nbsp;Bulk Contact Creation
+        </h3>
+        <div class="slds-p-top_medium">
+            <lightning-icon icon-name="action:new" alternative-text="Add Row" size="small" title="Add Row"
+                onclick={addRow}>
+            </lightning-icon>
+        </div>
+        <template for:each={contacts} for:item="item" for:index="index">
+            <lightning-record-edit-form key={item.id}>
+                <lightning-messages> </lightning-messages>
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input label="FirstName" value={item.FirstName} variant="label-stacked" required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input label="LastName" value={item.LastName} variant="label-stacked" required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input label="Title" value={item.Title} variant="label-stacked" required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input label="Email" value={item.Email} variant="label-stacked" required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input label="AccountId" value={item.AccountId} variant="label-stacked" required>
+                        </lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <div class="slds-p-top_medium">
+                            <lightning-icon icon-name="action:delete" access-key={item.id} id={index}
+                                alternative-text="Delete Row" size="small" title="Delete Row" onclick={removeRow}>
+                            </lightning-icon>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-record-edit-form>
+        </template>
+        <template for:each={itemList} for:item="item" for:index="index">
+            <lightning-record-edit-form key={item.id} object-api-name="Contact">
+                <lightning-messages> </lightning-messages>
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input-field field-name="FirstName" name="input1" variant="label-stacked" required>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input-field field-name="LastName"   name="input2" variant="label-stacked" required>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input-field field-name="Title"  name="input3" variant="label-stacked" required>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input-field field-name="Email"  name="input4" variant="label-stacked" required>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <lightning-input-field field-name="AccountId"  name="input5" variant="label-stacked" required>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2"
+                        padding="around-small">
+                        <div class="slds-p-top_medium">
+                            <lightning-icon icon-name="action:delete" access-key={item.id} id={index}
+                                alternative-text="Delete Row" size="small" title="Delete Row" onclick={removeRow}>
+                            </lightning-icon>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-record-edit-form>
+        </template>
+        </br>
+        <lightning-layout>
+            <div class="slds-align_absolute-center">
+                <lightning-button variant="success" onclick={handleSubmit} name="submit" label="Submit">
+                </lightning-button>
+            </div>
+        </lightning-layout>
+    </lightning-card>
+</template> -->

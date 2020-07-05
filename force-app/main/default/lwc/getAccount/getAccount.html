@@ -1,0 +1,41 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_medium">
+            <!-- <template for:each={accountlist} for:item="account">
+                <div key={account.id} class="slds-col">
+                   <lightning-tile
+                          label={account.Name}>
+                        <lightning-button variant="Base" label="Record View" onclick={viewRecord} value={account.Id}></lightning-button>
+                   </lightning-tile>
+                </div>
+            </template> -->
+            <lightning-combobox name="inputObj" label="Select an Object Name" options={AllObjectsOptions} onchange={handleObjects}>
+            </lightning-combobox>
+            <lightning-combobox name="input1" label="Name Of the Account" options={accountOptions} onblur={handlevalidation} onchange={handleChange}>
+            </lightning-combobox><br/>
+            
+            <template for:each={childlist} for:item="child">
+                <div key={child.recordId}>
+                    <div class="table-wrapper">
+                        <table class="fl-table">
+                            <tbody>
+                                <tr>
+                                    <td data-label="Unit Name">
+                                        <lightning-input type="checkbox"  value={child.isSelected} onchange={hanndlecheck}></lightning-input>
+                                    </td>
+                                    <td data-label="Object Name">
+                                        {child.objName}
+                                    </td>
+                                    <td data-label="Relationship Name">
+                                        {child.relationshipName}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </template>    
+            <lightning-button variant="brand" label="Clone" onclick={viewRecord}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
